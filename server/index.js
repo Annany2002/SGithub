@@ -16,7 +16,7 @@ import connect from "./connection.js";
 dotenv.config();
 
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 5000;
 const __dirname = path.resolve();
 console.log("dirname", __dirname);
 
